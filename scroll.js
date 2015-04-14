@@ -1,4 +1,4 @@
- $('a[href*=#Home]:not([href=#])').click(function() {
+ /*$('a[href*=#Home]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -10,4 +10,10 @@
       }
     }
   });
+  */
+  $("#button1").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#Home").offset().top
+    }, 2000);
+});
 
